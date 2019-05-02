@@ -53,7 +53,7 @@ public class Data {
         Palabra p;
         List<Palabra> listaPalabras = new ArrayList();
         
-        rs = con.ejecutar("SELECT descripcionSignificado, nombre "
+        rs = con.ejecutar("SELECT nombre, descripcionSignificado "
                 + "FROM significado "
                 + "INNER JOIN palabra ON significado.id = palabra.fk_significado;");
         while (rs.next()) {

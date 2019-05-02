@@ -877,7 +877,7 @@ public class App extends javax.swing.JFrame {
         DefaultTableModel tblDescripciones = (DefaultTableModel) tabPalabras.getModel();
 
         tblDescripciones.setRowCount(0);
-
+        
         for (Palabra palabra : listaPalabras) {
             String[] datosTabla = {palabra.getNombre(), palabra.getSignificado()};
             tblDescripciones.addRow(datosTabla);
